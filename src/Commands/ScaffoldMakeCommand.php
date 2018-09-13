@@ -71,6 +71,11 @@ class ScaffoldMakeCommand extends Command
         $this->composer = app()['composer'];
     }
 
+    public function handle()
+    {
+        return $this->fire();
+    }
+
     /**
      * Execute the console command.
      *
